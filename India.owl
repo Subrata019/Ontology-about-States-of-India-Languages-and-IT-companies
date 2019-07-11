@@ -1,0 +1,1909 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY india "http://www.semanticweb.org/puchu/ontologies/2019/5/india#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/puchu/ontologies/2019/5/india#"
+     xml:base="http://www.semanticweb.org/puchu/ontologies/2019/5/india"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:india="http://www.semanticweb.org/puchu/ontologies/2019/5/india#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/puchu/ontologies/2019/5/india"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#has -->
+
+    <owl:ObjectProperty rdf:about="&india;has">
+        <rdfs:range rdf:resource="&india;IT_Companies"/>
+        <rdfs:domain rdf:resource="&india;States"/>
+        <rdfs:domain rdf:resource="&india;Union_Territories"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#speak -->
+
+    <owl:ObjectProperty rdf:about="&india;speak">
+        <rdfs:range rdf:resource="&india;Languages"/>
+        <rdfs:domain rdf:resource="&india;States"/>
+        <rdfs:domain rdf:resource="&india;Union_Territories"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#IT_Companies_Name -->
+
+    <owl:DatatypeProperty rdf:about="&india;IT_Companies_Name">
+        <rdfs:domain rdf:resource="&india;IT_Companies"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#IT_Companies_id -->
+
+    <owl:DatatypeProperty rdf:about="&india;IT_Companies_id">
+        <rdfs:domain rdf:resource="&india;IT_Companies"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Name -->
+
+    <owl:DatatypeProperty rdf:about="&india;Name">
+        <rdfs:domain rdf:resource="&india;States"/>
+        <rdfs:domain rdf:resource="&india;Union_Territories"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Pincode -->
+
+    <owl:DatatypeProperty rdf:about="&india;Pincode">
+        <rdfs:domain rdf:resource="&india;States"/>
+        <rdfs:domain rdf:resource="&india;Union_Territories"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#language_id -->
+
+    <owl:DatatypeProperty rdf:about="&india;language_id">
+        <rdfs:domain rdf:resource="&india;Languages"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#language_name -->
+
+    <owl:DatatypeProperty rdf:about="&india;language_name">
+        <rdfs:domain rdf:resource="&india;Languages"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#population -->
+
+    <owl:DatatypeProperty rdf:about="&india;population">
+        <rdfs:domain rdf:resource="&india;India"/>
+        <rdfs:domain rdf:resource="&india;States"/>
+        <rdfs:domain rdf:resource="&india;Union_Territories"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#state_id -->
+
+    <owl:DatatypeProperty rdf:about="&india;state_id">
+        <rdfs:domain rdf:resource="&india;States"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#union_territories_id -->
+
+    <owl:DatatypeProperty rdf:about="&india;union_territories_id">
+        <rdfs:domain rdf:resource="&india;Union_Territories"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Characteristics -->
+
+    <owl:Class rdf:about="&india;Characteristics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#IT_Companies -->
+
+    <owl:Class rdf:about="&india;IT_Companies">
+        <rdfs:subClassOf rdf:resource="&india;Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#India -->
+
+    <owl:Class rdf:about="&india;India"/>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Languages -->
+
+    <owl:Class rdf:about="&india;Languages">
+        <rdfs:subClassOf rdf:resource="&india;Characteristics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#States -->
+
+    <owl:Class rdf:about="&india;States">
+        <rdfs:subClassOf rdf:resource="&india;India"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Union_Territories -->
+
+    <owl:Class rdf:about="&india;Union_Territories">
+        <rdfs:subClassOf rdf:resource="&india;India"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#3i_Infotech -->
+
+    <owl:NamedIndividual rdf:about="&india;3i_Infotech">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">1</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">3i Infotech</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Accel_Frontline -->
+
+    <owl:NamedIndividual rdf:about="&india;Accel_Frontline">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">2</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Accel Technologies</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Aditi_Technologies -->
+
+    <owl:NamedIndividual rdf:about="&india;Aditi_Technologies">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">3</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Aditi Technologies</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Adrenalin_eSystems -->
+
+    <owl:NamedIndividual rdf:about="&india;Adrenalin_eSystems">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">4</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Adrenalin eSystems</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Aftek -->
+
+    <owl:NamedIndividual rdf:about="&india;Aftek">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">5</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Aftek</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Andaman_&amp;_Nicobar_islands -->
+
+    <owl:NamedIndividual rdf:about="&india;Andaman_&amp;_Nicobar_islands">
+        <rdf:type rdf:resource="&india;Union_Territories"/>
+        <union_territories_id rdf:datatype="&xsd;int">1</union_territories_id>
+        <population rdf:datatype="&xsd;integer">419978</population>
+        <Pincode rdf:datatype="&xsd;string">744</Pincode>
+        <Name rdf:datatype="&xsd;string">Andaman &amp; Nicobar islands</Name>
+        <speak rdf:resource="&india;Bengali"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Malayalam"/>
+        <speak rdf:resource="&india;Tamil"/>
+        <speak rdf:resource="&india;Telegu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Andhra_Pradesh -->
+
+    <owl:NamedIndividual rdf:about="&india;Andhra_Pradesh">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">1</state_id>
+        <Pincode rdf:datatype="&xsd;string">51-53</Pincode>
+        <population rdf:datatype="&xsd;integer">52883163</population>
+        <Name rdf:datatype="&xsd;string">Andhra Pradesh</Name>
+        <has rdf:resource="&india;3i_Infotech"/>
+        <speak rdf:resource="&india;Andaman_&amp;_Nicobar_islands"/>
+        <has rdf:resource="&india;Cognizant"/>
+        <has rdf:resource="&india;Collabera"/>
+        <has rdf:resource="&india;Cybage"/>
+        <has rdf:resource="&india;Cyient"/>
+        <has rdf:resource="&india;HCL_Technologies"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <has rdf:resource="&india;IGATE"/>
+        <has rdf:resource="&india;Infosys"/>
+        <has rdf:resource="&india;Larsen_&amp;_Toubro_Infotech"/>
+        <has rdf:resource="&india;Microsoft"/>
+        <has rdf:resource="&india;Mindtree"/>
+        <has rdf:resource="&india;Oracle_Financial_Services_Software"/>
+        <has rdf:resource="&india;Pesistant_Systems"/>
+        <has rdf:resource="&india;Polaris_Financial_Technology_Limited"/>
+        <has rdf:resource="&india;Pramati_Technologies"/>
+        <speak rdf:resource="&india;Tamil"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <has rdf:resource="&india;Tech_Mahindra"/>
+        <speak rdf:resource="&india;Telegu"/>
+        <has rdf:resource="&india;Thoughtworks"/>
+        <has rdf:resource="&india;Trianz"/>
+        <speak rdf:resource="&india;Urdu"/>
+        <has rdf:resource="&india;Wipro"/>
+        <has rdf:resource="&india;Zensar_Technologies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Arunachal_Pradesh -->
+
+    <owl:NamedIndividual rdf:about="&india;Arunachal_Pradesh">
+        <rdf:type rdf:resource="&india;States"/>
+        <population rdf:datatype="&xsd;language">1528296</population>
+        <state_id rdf:datatype="&xsd;int">2</state_id>
+        <Pincode rdf:datatype="&xsd;string">79</Pincode>
+        <Name rdf:datatype="&xsd;string">Arunachal Pradesh</Name>
+        <speak rdf:resource="&india;Assamese"/>
+        <speak rdf:resource="&india;Bengali"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Nepali"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Assam -->
+
+    <owl:NamedIndividual rdf:about="&india;Assam">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">3</state_id>
+        <population rdf:datatype="&xsd;integer">34586234</population>
+        <Pincode rdf:datatype="&xsd;string">78</Pincode>
+        <Name rdf:datatype="&xsd;string">Assam</Name>
+        <speak rdf:resource="&india;Assamese"/>
+        <speak rdf:resource="&india;Bengali"/>
+        <speak rdf:resource="&india;Bodo"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Nepali"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <has rdf:resource="&india;Wipro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Assamese -->
+
+    <owl:NamedIndividual rdf:about="&india;Assamese">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">1</language_id>
+        <language_name rdf:datatype="&xsd;string">Assamese</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Atom_Technologies -->
+
+    <owl:NamedIndividual rdf:about="&india;Atom_Technologies">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">6</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Atom Technologies</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Bengali -->
+
+    <owl:NamedIndividual rdf:about="&india;Bengali">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">2</language_id>
+        <language_name rdf:datatype="&xsd;string">Bengali</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Bihar -->
+
+    <owl:NamedIndividual rdf:about="&india;Bihar">
+        <rdf:type rdf:resource="&india;States"/>
+        <population rdf:datatype="&xsd;integer">119461013</population>
+        <state_id rdf:datatype="&xsd;int">4</state_id>
+        <Pincode rdf:datatype="&xsd;string">80-85</Pincode>
+        <Name rdf:datatype="&xsd;string">Bihar</Name>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Maithili"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <speak rdf:resource="&india;Urdu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Blue_Star_Infotech -->
+
+    <owl:NamedIndividual rdf:about="&india;Blue_Star_Infotech">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">7</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Blue Star Infotech</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Bodo -->
+
+    <owl:NamedIndividual rdf:about="&india;Bodo">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">3</language_id>
+        <language_name rdf:datatype="&xsd;string">Bodo</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#C-DAC -->
+
+    <owl:NamedIndividual rdf:about="&india;C-DAC">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">8</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">C-DAC</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#CMC_Limited -->
+
+    <owl:NamedIndividual rdf:about="&india;CMC_Limited">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">9</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">CMC Limited</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Chandigarh -->
+
+    <owl:NamedIndividual rdf:about="&india;Chandigarh">
+        <rdf:type rdf:resource="&india;Union_Territories"/>
+        <population rdf:datatype="&xsd;integer">1126705</population>
+        <Pincode rdf:datatype="&xsd;string">16</Pincode>
+        <union_territories_id rdf:datatype="&xsd;int">2</union_territories_id>
+        <Name rdf:datatype="&xsd;string">Chandigarh</Name>
+        <speak rdf:resource="&india;Hindi"/>
+        <has rdf:resource="&india;Infosys"/>
+        <speak rdf:resource="&india;Punjabi"/>
+        <has rdf:resource="&india;Tech_Mahindra"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Chhattisgarh -->
+
+    <owl:NamedIndividual rdf:about="&india;Chhattisgarh">
+        <rdf:type rdf:resource="&india;States"/>
+        <population rdf:datatype="&xsd;integer">28566990</population>
+        <Pincode rdf:datatype="&xsd;string">49</Pincode>
+        <state_id rdf:datatype="&xsd;int">5</state_id>
+        <Name rdf:datatype="&xsd;string">Chhattisgarh</Name>
+        <speak rdf:resource="&india;Bengali"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Oriya"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Cognizant -->
+
+    <owl:NamedIndividual rdf:about="&india;Cognizant">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">10</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Cognizant</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Collabera -->
+
+    <owl:NamedIndividual rdf:about="&india;Collabera">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">11</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Collabera</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Computer_Science_Corporation -->
+
+    <owl:NamedIndividual rdf:about="&india;Computer_Science_Corporation">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">12</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Compuet Science Corporation</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Cybage -->
+
+    <owl:NamedIndividual rdf:about="&india;Cybage">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">13</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Cybage</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Cyient -->
+
+    <owl:NamedIndividual rdf:about="&india;Cyient">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">14</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Cyient</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Cynapse -->
+
+    <owl:NamedIndividual rdf:about="&india;Cynapse">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">15</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Cynapse</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Dadra_&amp;_Nagar_Haveli -->
+
+    <owl:NamedIndividual rdf:about="&india;Dadra_&amp;_Nagar_Haveli">
+        <rdf:type rdf:resource="&india;Union_Territories"/>
+        <union_territories_id rdf:datatype="&xsd;int">3</union_territories_id>
+        <population rdf:datatype="&xsd;integer">378979</population>
+        <Pincode rdf:datatype="&xsd;string">396</Pincode>
+        <Name rdf:datatype="&xsd;string">Dadra &amp; Nagar Haveli</Name>
+        <speak rdf:resource="&india;Gujarati"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Konkani"/>
+        <speak rdf:resource="&india;Marathi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Daman_&amp;_Diu -->
+
+    <owl:NamedIndividual rdf:about="&india;Daman_&amp;_Diu">
+        <rdf:type rdf:resource="&india;Union_Territories"/>
+        <population rdf:datatype="&xsd;integer">220084</population>
+        <Pincode rdf:datatype="&xsd;string">396</Pincode>
+        <union_territories_id rdf:datatype="&xsd;int">4</union_territories_id>
+        <union_territories_id rdf:datatype="&xsd;string">Daman &amp; Diu</union_territories_id>
+        <speak rdf:resource="&india;Gujarati"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Marathi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Datamatics_Global_Services -->
+
+    <owl:NamedIndividual rdf:about="&india;Datamatics_Global_Services">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">16</IT_Companies_id>
+        <Name rdf:datatype="&xsd;string">Datamatics Global Services</Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Delhi -->
+
+    <owl:NamedIndividual rdf:about="&india;Delhi">
+        <rdf:type rdf:resource="&india;Union_Territories"/>
+        <Pincode rdf:datatype="&xsd;string">11</Pincode>
+        <population rdf:datatype="&xsd;integer">18345784</population>
+        <union_territories_id rdf:datatype="&xsd;int">5</union_territories_id>
+        <Name rdf:datatype="&xsd;string">Delhi</Name>
+        <has rdf:resource="&india;Accel_Frontline"/>
+        <speak rdf:resource="&india;Bengali"/>
+        <has rdf:resource="&india;CMC_Limited"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <has rdf:resource="&india;Microsoft"/>
+        <has rdf:resource="&india;NIIT_Technologies"/>
+        <has rdf:resource="&india;Oswald_Labs"/>
+        <speak rdf:resource="&india;Punjabi"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <has rdf:resource="&india;Trianz"/>
+        <speak rdf:resource="&india;Urdu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Dogri -->
+
+    <owl:NamedIndividual rdf:about="&india;Dogri">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">4</language_id>
+        <language_name rdf:datatype="&xsd;string">Dogri</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Eclerx -->
+
+    <owl:NamedIndividual rdf:about="&india;Eclerx">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">17</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Eclerx</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Firstsource -->
+
+    <owl:NamedIndividual rdf:about="&india;Firstsource">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">18</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Firstsource</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Fulcrum_Worldwide -->
+
+    <owl:NamedIndividual rdf:about="&india;Fulcrum_Worldwide">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">19</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Fulcrum Worldwide</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Gateway_TechnoLabs -->
+
+    <owl:NamedIndividual rdf:about="&india;Gateway_TechnoLabs">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">20</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Gateway TechnoLabs</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Goa -->
+
+    <owl:NamedIndividual rdf:about="&india;Goa">
+        <rdf:type rdf:resource="&india;States"/>
+        <population rdf:datatype="&xsd;integer">1542750</population>
+        <Pincode rdf:datatype="&xsd;string">40</Pincode>
+        <state_id rdf:datatype="&xsd;int">6</state_id>
+        <Name rdf:datatype="&xsd;string">Goa</Name>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Kannada"/>
+        <speak rdf:resource="&india;Konkani"/>
+        <speak rdf:resource="&india;Marathi"/>
+        <has rdf:resource="&india;Pesistant_Systems"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Godrej_Infotech_Ltd -->
+
+    <owl:NamedIndividual rdf:about="&india;Godrej_Infotech_Ltd">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">21</IT_Companies_id>
+        <IT_Companies_id rdf:datatype="&xsd;string">Godrej Infotech Ltd</IT_Companies_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Gujarat -->
+
+    <owl:NamedIndividual rdf:about="&india;Gujarat">
+        <rdf:type rdf:resource="&india;States"/>
+        <Pincode rdf:datatype="&xsd;string">36-39</Pincode>
+        <population rdf:datatype="&xsd;integer">63907200</population>
+        <state_id rdf:datatype="&xsd;int">7</state_id>
+        <Name rdf:datatype="&xsd;string">Gujarat</Name>
+        <has rdf:resource="&india;Cybage"/>
+        <has rdf:resource="&india;Gateway_TechnoLabs"/>
+        <speak rdf:resource="&india;Gujarati"/>
+        <has rdf:resource="&india;HCL_Technologies"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <has rdf:resource="&india;IGATE"/>
+        <speak rdf:resource="&india;Marathi"/>
+        <has rdf:resource="&india;Microsoft"/>
+        <speak rdf:resource="&india;Sindhi"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <speak rdf:resource="&india;Urdu"/>
+        <has rdf:resource="&india;Wipro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Gujarati -->
+
+    <owl:NamedIndividual rdf:about="&india;Gujarati">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">5</language_id>
+        <language_name rdf:datatype="&xsd;string">Gujarati</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#HCL_Technologies -->
+
+    <owl:NamedIndividual rdf:about="&india;HCL_Technologies">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">23</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">HCL Technologies</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#HSBC_GLT_India -->
+
+    <owl:NamedIndividual rdf:about="&india;HSBC_GLT_India">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">26</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">HSBC GLT India</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Harbinger_Systems -->
+
+    <owl:NamedIndividual rdf:about="&india;Harbinger_Systems">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">22</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Harbinger Systems</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Haryana -->
+
+    <owl:NamedIndividual rdf:about="&india;Haryana">
+        <rdf:type rdf:resource="&india;States"/>
+        <Pincode rdf:datatype="&xsd;string">12,13</Pincode>
+        <population rdf:datatype="&xsd;integer">27388008</population>
+        <state_id rdf:datatype="&xsd;int">8</state_id>
+        <Name rdf:datatype="&xsd;string">Haryana</Name>
+        <has rdf:resource="&india;Cognizant"/>
+        <has rdf:resource="&india;Collabera"/>
+        <has rdf:resource="&india;HCL_Technologies"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <has rdf:resource="&india;Microsoft"/>
+        <has rdf:resource="&india;NIIT_Technologies"/>
+        <speak rdf:resource="&india;Punjabi"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <has rdf:resource="&india;Thoughtworks"/>
+        <speak rdf:resource="&india;Urdu"/>
+        <has rdf:resource="&india;Wipro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Hexaware_Technologies -->
+
+    <owl:NamedIndividual rdf:about="&india;Hexaware_Technologies">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">24</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Hexaware Technologies</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Himachal_Pradesh -->
+
+    <owl:NamedIndividual rdf:about="&india;Himachal_Pradesh">
+        <rdf:type rdf:resource="&india;States"/>
+        <Pincode rdf:datatype="&xsd;string">17</Pincode>
+        <population rdf:datatype="&xsd;integer">7316708</population>
+        <state_id rdf:datatype="&xsd;int">9</state_id>
+        <Name rdf:datatype="&xsd;string">Himachal Pradesh</Name>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Nepali"/>
+        <speak rdf:resource="&india;Punjabi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Hindi -->
+
+    <owl:NamedIndividual rdf:about="&india;Hindi">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">6</language_id>
+        <language_name rdf:datatype="&xsd;string">Hindi</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Honeywell -->
+
+    <owl:NamedIndividual rdf:about="&india;Honeywell">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">25</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Honeywell</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#IGATE -->
+
+    <owl:NamedIndividual rdf:about="&india;IGATE">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">27</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">IGATE</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Infosys -->
+
+    <owl:NamedIndividual rdf:about="&india;Infosys">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">28</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Infosys</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Jammu_&amp;_Kashmir -->
+
+    <owl:NamedIndividual rdf:about="&india;Jammu_&amp;_Kashmir">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">10</state_id>
+        <population rdf:datatype="&xsd;integer">13635010</population>
+        <Pincode rdf:datatype="&xsd;string">18,19</Pincode>
+        <Name rdf:datatype="&xsd;string">Jammu &amp; Kashmir</Name>
+        <speak rdf:resource="&india;Dogri"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Kashmiri"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Jharkhand -->
+
+    <owl:NamedIndividual rdf:about="&india;Jharkhand">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">11</state_id>
+        <population rdf:datatype="&xsd;integer">37329128</population>
+        <Pincode rdf:datatype="&xsd;string">80-85</Pincode>
+        <Name rdf:datatype="&xsd;string">Jharkhand</Name>
+        <speak rdf:resource="&india;Bengali"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Santali"/>
+        <speak rdf:resource="&india;Urdu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#KPIT_Technologies -->
+
+    <owl:NamedIndividual rdf:about="&india;KPIT_Technologies">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">29</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">KPIT Technologies</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Kannada -->
+
+    <owl:NamedIndividual rdf:about="&india;Kannada">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">7</language_id>
+        <language_name rdf:datatype="&xsd;string">Kannada</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Karnataka -->
+
+    <owl:NamedIndividual rdf:about="&india;Karnataka">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">12</state_id>
+        <Pincode rdf:datatype="&xsd;string">56-59</Pincode>
+        <population rdf:datatype="&xsd;integer">66165886</population>
+        <Name rdf:datatype="&xsd;string">Karnataka</Name>
+        <has rdf:resource="&india;3i_Infotech"/>
+        <has rdf:resource="&india;Accel_Frontline"/>
+        <has rdf:resource="&india;Aditi_Technologies"/>
+        <has rdf:resource="&india;Cognizant"/>
+        <has rdf:resource="&india;Collabera"/>
+        <has rdf:resource="&india;Cyient"/>
+        <has rdf:resource="&india;Datamatics_Global_Services"/>
+        <has rdf:resource="&india;HCL_Technologies"/>
+        <has rdf:resource="&india;Hexaware_Technologies"/>
+        <has rdf:resource="&india;IGATE"/>
+        <has rdf:resource="&india;Infosys"/>
+        <has rdf:resource="&india;KPIT_Technologies"/>
+        <speak rdf:resource="&india;Kannada"/>
+        <has rdf:resource="&india;Larsen_&amp;_Toubro_Infotech"/>
+        <speak rdf:resource="&india;Marathi"/>
+        <has rdf:resource="&india;Microsoft"/>
+        <has rdf:resource="&india;Mindtree"/>
+        <has rdf:resource="&india;Mistral_Solutions"/>
+        <has rdf:resource="&india;Mphasis"/>
+        <has rdf:resource="&india;Oracle_Financial_Services_Software"/>
+        <has rdf:resource="&india;Pesistant_Systems"/>
+        <has rdf:resource="&india;SPAN_Infotech(India)_Pvt._Ltd."/>
+        <has rdf:resource="&india;Sasken"/>
+        <has rdf:resource="&india;Sonata_Software"/>
+        <speak rdf:resource="&india;Tamil"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <has rdf:resource="&india;Tech_Mahindra"/>
+        <speak rdf:resource="&india;Telegu"/>
+        <has rdf:resource="&india;Thoughtworks"/>
+        <has rdf:resource="&india;Trianz"/>
+        <speak rdf:resource="&india;Urdu"/>
+        <has rdf:resource="&india;Wipro"/>
+        <has rdf:resource="&india;Xerox"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Kashmiri -->
+
+    <owl:NamedIndividual rdf:about="&india;Kashmiri">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">8</language_id>
+        <language_name rdf:datatype="&xsd;string">Kashmiri</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Kerala -->
+
+    <owl:NamedIndividual rdf:about="&india;Kerala">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">13</state_id>
+        <population rdf:datatype="&xsd;integer">35330888</population>
+        <Pincode rdf:datatype="&xsd;string">67-69</Pincode>
+        <Name rdf:datatype="&xsd;string">Kerala</Name>
+        <has rdf:resource="&india;Andhra_Pradesh"/>
+        <has rdf:resource="&india;Cognizant"/>
+        <has rdf:resource="&india;HCL_Technologies"/>
+        <has rdf:resource="&india;Infosys"/>
+        <speak rdf:resource="&india;Malayalam"/>
+        <has rdf:resource="&india;Microsoft"/>
+        <has rdf:resource="&india;MobME"/>
+        <has rdf:resource="&india;Quest_Global"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <has rdf:resource="&india;ThinkPalm_Technologies"/>
+        <has rdf:resource="&india;UST_Global"/>
+        <has rdf:resource="&india;Wipro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Konkani -->
+
+    <owl:NamedIndividual rdf:about="&india;Konkani">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">9</language_id>
+        <language_name rdf:datatype="&xsd;string">Konkani</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Lakshadweep -->
+
+    <owl:NamedIndividual rdf:about="&india;Lakshadweep">
+        <rdf:type rdf:resource="&india;Union_Territories"/>
+        <union_territories_id rdf:datatype="&xsd;int">6</union_territories_id>
+        <Pincode rdf:datatype="&xsd;string">682</Pincode>
+        <population rdf:datatype="&xsd;integer">71218</population>
+        <Name rdf:datatype="&xsd;string">Lakshadweep</Name>
+        <speak rdf:resource="&india;Malayalam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Larsen_&amp;_Toubro_Infotech -->
+
+    <owl:NamedIndividual rdf:about="&india;Larsen_&amp;_Toubro_Infotech">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">30</IT_Companies_id>
+        <IT_Companies_id rdf:datatype="&xsd;string">Larsen &amp; Toubro Infotech</IT_Companies_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#MIzoram -->
+
+    <owl:NamedIndividual rdf:about="&india;MIzoram">
+        <rdf:type rdf:resource="&india;States"/>
+        <population rdf:datatype="&xsd;integer">1205974</population>
+        <state_id rdf:datatype="&xsd;int">18</state_id>
+        <Pincode rdf:datatype="&xsd;string">796</Pincode>
+        <Name rdf:datatype="&xsd;string">Mizoram</Name>
+        <speak rdf:resource="&india;Bengali"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Nepali"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Madhya_Pradesh -->
+
+    <owl:NamedIndividual rdf:about="&india;Madhya_Pradesh">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">14</state_id>
+        <Pincode rdf:datatype="&xsd;string">45-48</Pincode>
+        <population rdf:datatype="&xsd;integer">82342793</population>
+        <Name rdf:datatype="&xsd;string">Madhya Pradesh</Name>
+        <has rdf:resource="&india;Cognizant"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <has rdf:resource="&india;IGATE"/>
+        <has rdf:resource="&india;Infosys"/>
+        <speak rdf:resource="&india;Marathi"/>
+        <has rdf:resource="&india;NIIT_Technologies"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <speak rdf:resource="&india;Urdu"/>
+        <has rdf:resource="&india;Wipro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Maharastra -->
+
+    <owl:NamedIndividual rdf:about="&india;Maharastra">
+        <rdf:type rdf:resource="&india;States"/>
+        <population rdf:datatype="&xsd;integer">120837347</population>
+        <state_id rdf:datatype="&xsd;int">15</state_id>
+        <Pincode rdf:datatype="&xsd;string">40-44</Pincode>
+        <Name rdf:datatype="&xsd;string">Maharastra</Name>
+        <has rdf:resource="&india;3i_Infotech"/>
+        <has rdf:resource="&india;Aftek"/>
+        <has rdf:resource="&india;Atom_Technologies"/>
+        <has rdf:resource="&india;Blue_Star_Infotech"/>
+        <has rdf:resource="&india;C-DAC"/>
+        <has rdf:resource="&india;Cognizant"/>
+        <has rdf:resource="&india;Collabera"/>
+        <has rdf:resource="&india;Cybage"/>
+        <has rdf:resource="&india;Cynapse"/>
+        <has rdf:resource="&india;Datamatics_Global_Services"/>
+        <has rdf:resource="&india;Eclerx"/>
+        <has rdf:resource="&india;Firstsource"/>
+        <has rdf:resource="&india;Godrej_Infotech_Ltd"/>
+        <speak rdf:resource="&india;Gujarati"/>
+        <has rdf:resource="&india;HCL_Technologies"/>
+        <has rdf:resource="&india;HSBC_GLT_India"/>
+        <has rdf:resource="&india;Harbinger_Systems"/>
+        <has rdf:resource="&india;Hexaware_Technologies"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <has rdf:resource="&india;IGATE"/>
+        <has rdf:resource="&india;Infosys"/>
+        <has rdf:resource="&india;KPIT_Technologies"/>
+        <has rdf:resource="&india;Larsen_&amp;_Toubro_Infotech"/>
+        <speak rdf:resource="&india;Marathi"/>
+        <has rdf:resource="&india;Mastek"/>
+        <has rdf:resource="&india;Melstar_Information_Technologies"/>
+        <has rdf:resource="&india;Microsoft"/>
+        <has rdf:resource="&india;Mindtree"/>
+        <has rdf:resource="&india;Mphasis"/>
+        <has rdf:resource="&india;NIIT_Technologies"/>
+        <has rdf:resource="&india;Onward_Technologies"/>
+        <has rdf:resource="&india;Oracle_Financial_Services_Software"/>
+        <has rdf:resource="&india;Pesistant_Systems"/>
+        <has rdf:resource="&india;Ramco_Systems"/>
+        <has rdf:resource="&india;Rediff.com"/>
+        <has rdf:resource="&india;Sasken"/>
+        <has rdf:resource="&india;Sonata_Software"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <has rdf:resource="&india;Tata_Interactive_Systems"/>
+        <has rdf:resource="&india;Tech_Mahindra"/>
+        <has rdf:resource="&india;Thirdware"/>
+        <has rdf:resource="&india;Thoughtworks"/>
+        <has rdf:resource="&india;Trianz"/>
+        <speak rdf:resource="&india;Urdu"/>
+        <has rdf:resource="&india;WNS_Global_Services"/>
+        <has rdf:resource="&india;Wipro"/>
+        <has rdf:resource="&india;Zensar_Technologies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Maithili -->
+
+    <owl:NamedIndividual rdf:about="&india;Maithili">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">10</language_id>
+        <language_name rdf:datatype="&xsd;string">Maithali</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Malayalam -->
+
+    <owl:NamedIndividual rdf:about="&india;Malayalam">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">11</language_id>
+        <language_name rdf:datatype="&xsd;string">Malayalam</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Manipur -->
+
+    <owl:NamedIndividual rdf:about="&india;Manipur">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">16</state_id>
+        <population rdf:datatype="&xsd;integer">3008546</population>
+        <Pincode rdf:datatype="&xsd;string">795</Pincode>
+        <Name rdf:datatype="&xsd;string">Manipur</Name>
+        <speak rdf:resource="&india;Bengali"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Manipuri"/>
+        <speak rdf:resource="&india;Nepali"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Manipuri -->
+
+    <owl:NamedIndividual rdf:about="&india;Manipuri">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">12</language_id>
+        <language_name rdf:datatype="&xsd;string">Manipuri</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Marathi -->
+
+    <owl:NamedIndividual rdf:about="&india;Marathi">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">13</language_id>
+        <language_name rdf:datatype="&xsd;string">Marathi</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Mastek -->
+
+    <owl:NamedIndividual rdf:about="&india;Mastek">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">31</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Mastek</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Meghalaya -->
+
+    <owl:NamedIndividual rdf:about="&india;Meghalaya">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">17</state_id>
+        <population rdf:datatype="&xsd;integer">3276323</population>
+        <Pincode rdf:datatype="&xsd;string">793,794,783123</Pincode>
+        <Name rdf:datatype="&xsd;string">Meghalaya</Name>
+        <speak rdf:resource="&india;Bengali"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Nepali"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Melstar_Information_Technologies -->
+
+    <owl:NamedIndividual rdf:about="&india;Melstar_Information_Technologies">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">32</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Melstar Information Technologies</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Microland -->
+
+    <owl:NamedIndividual rdf:about="&india;Microland">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">33</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Microland</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Microsoft -->
+
+    <owl:NamedIndividual rdf:about="&india;Microsoft">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">34</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Microsoft</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Mindtree -->
+
+    <owl:NamedIndividual rdf:about="&india;Mindtree">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">35</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Mindtree</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Mistral_Solutions -->
+
+    <owl:NamedIndividual rdf:about="&india;Mistral_Solutions">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">36</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Mistral Solutions</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#MobME -->
+
+    <owl:NamedIndividual rdf:about="&india;MobME">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">37</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">MobME</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Monsoon_Multimedia -->
+
+    <owl:NamedIndividual rdf:about="&india;Monsoon_Multimedia">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">38</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Monsoon Multimedia</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Mphasis -->
+
+    <owl:NamedIndividual rdf:about="&india;Mphasis">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">39</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Mphasis</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#NIIT_Technologies -->
+
+    <owl:NamedIndividual rdf:about="&india;NIIT_Technologies">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">40</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">NIIT Technologies</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Nagaland -->
+
+    <owl:NamedIndividual rdf:about="&india;Nagaland">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">19</state_id>
+        <Pincode rdf:datatype="&xsd;integer">2189297</Pincode>
+        <population rdf:datatype="&xsd;string">797-798</population>
+        <Name rdf:datatype="&xsd;string">Nagaland</Name>
+        <speak rdf:resource="&india;Bengali"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Nepali"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Nepali -->
+
+    <owl:NamedIndividual rdf:about="&india;Nepali">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">14</language_id>
+        <language_name rdf:datatype="&xsd;string">Nepali</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Nucleus_Software_Exports_Ltd. -->
+
+    <owl:NamedIndividual rdf:about="&india;Nucleus_Software_Exports_Ltd.">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">41</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Nucleus Software Exports Ltd.</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Odisha -->
+
+    <owl:NamedIndividual rdf:about="&india;Odisha">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">20</state_id>
+        <population rdf:datatype="&xsd;integer">45429399</population>
+        <Pincode rdf:datatype="&xsd;string">74,75</Pincode>
+        <Name rdf:datatype="&xsd;string">Odisha</Name>
+        <has rdf:resource="&india;Firstsource"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <has rdf:resource="&india;Infosys"/>
+        <has rdf:resource="&india;Mindtree"/>
+        <speak rdf:resource="&india;Oriya"/>
+        <speak rdf:resource="&india;Santali"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <has rdf:resource="&india;Tech_Mahindra"/>
+        <speak rdf:resource="&india;Telegu"/>
+        <has rdf:resource="&india;Wipro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Onward_Technologies -->
+
+    <owl:NamedIndividual rdf:about="&india;Onward_Technologies">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">42</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Onward Technologies</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Oracle_Financial_Services_Software -->
+
+    <owl:NamedIndividual rdf:about="&india;Oracle_Financial_Services_Software">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">43</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Oracle Financial Services Software</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Oriya -->
+
+    <owl:NamedIndividual rdf:about="&india;Oriya">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">15</language_id>
+        <language_name rdf:datatype="&xsd;string">Oriya</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Oswald_Labs -->
+
+    <owl:NamedIndividual rdf:about="&india;Oswald_Labs">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">44</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Oswald Labs</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Pesistant_Systems -->
+
+    <owl:NamedIndividual rdf:about="&india;Pesistant_Systems">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">45</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Persistant Systems</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Polaris_Financial_Technology_Limited -->
+
+    <owl:NamedIndividual rdf:about="&india;Polaris_Financial_Technology_Limited">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">46</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Polaris Financial Technology Limited</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Pramati_Technologies -->
+
+    <owl:NamedIndividual rdf:about="&india;Pramati_Technologies">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">47</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Pramati Technologies</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Prodapt_Solutions -->
+
+    <owl:NamedIndividual rdf:about="&india;Prodapt_Solutions">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">48</IT_Companies_id>
+        <IT_Companies_id rdf:datatype="&xsd;string">Prodapt Solutions</IT_Companies_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Puducherry -->
+
+    <owl:NamedIndividual rdf:about="&india;Puducherry">
+        <rdf:type rdf:resource="&india;Union_Territories"/>
+        <population rdf:datatype="&xsd;integer">1375592</population>
+        <Pincode rdf:datatype="&xsd;string">605</Pincode>
+        <union_territories_id rdf:datatype="&xsd;int">7</union_territories_id>
+        <Name rdf:datatype="&xsd;string">Puducherry</Name>
+        <has rdf:resource="&india;Datamatics_Global_Services"/>
+        <speak rdf:resource="&india;Kannada"/>
+        <speak rdf:resource="&india;Tamil"/>
+        <speak rdf:resource="&india;Telegu"/>
+        <speak rdf:resource="&india;Urdu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Punjab -->
+
+    <owl:NamedIndividual rdf:about="&india;Punjab">
+        <rdf:type rdf:resource="&india;States"/>
+        <Pincode rdf:datatype="&xsd;string">14,15</Pincode>
+        <state_id rdf:datatype="&xsd;int">21</state_id>
+        <population rdf:datatype="&xsd;integer">29611935</population>
+        <Name rdf:datatype="&xsd;string">Punjab</Name>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Punjabi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Punjabi -->
+
+    <owl:NamedIndividual rdf:about="&india;Punjabi">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">16</language_id>
+        <language_name rdf:datatype="&xsd;string">Punjabi</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Quest_Global -->
+
+    <owl:NamedIndividual rdf:about="&india;Quest_Global">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">49</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Quest Global</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Rajasthan -->
+
+    <owl:NamedIndividual rdf:about="&india;Rajasthan">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">22</state_id>
+        <Pincode rdf:datatype="&xsd;string">30-34</Pincode>
+        <population rdf:datatype="&xsd;integer">78230816</population>
+        <Name rdf:datatype="&xsd;string">Rajasthan</Name>
+        <speak rdf:resource="&india;Hindi"/>
+        <has rdf:resource="&india;Infosys"/>
+        <speak rdf:resource="&india;Punjabi"/>
+        <speak rdf:resource="&india;Urdu"/>
+        <has rdf:resource="&india;Wipro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Ramco_Systems -->
+
+    <owl:NamedIndividual rdf:about="&india;Ramco_Systems">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">50</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Ramco Systems</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Rediff.com -->
+
+    <owl:NamedIndividual rdf:about="&india;Rediff.com">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">51</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Rediff.com</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#SPAN_Infotech(India)_Pvt._Ltd. -->
+
+    <owl:NamedIndividual rdf:about="&india;SPAN_Infotech(India)_Pvt._Ltd.">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">55</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Span Infotech(India) Pvt. Ltd.</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Samsung_India_Software_Center -->
+
+    <owl:NamedIndividual rdf:about="&india;Samsung_India_Software_Center">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">52</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Samsung India Software Center</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Santali -->
+
+    <owl:NamedIndividual rdf:about="&india;Santali">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">17</language_id>
+        <language_name rdf:datatype="&xsd;string">Santali</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Sasken -->
+
+    <owl:NamedIndividual rdf:about="&india;Sasken">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">53</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Sasken</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Sikkim -->
+
+    <owl:NamedIndividual rdf:about="&india;Sikkim">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">23</state_id>
+        <population rdf:datatype="&xsd;integer">671720</population>
+        <Pincode rdf:datatype="&xsd;string">737</Pincode>
+        <Name rdf:datatype="&xsd;string">Sikkim</Name>
+        <speak rdf:resource="&india;Bengali"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Nepali"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Sindhi -->
+
+    <owl:NamedIndividual rdf:about="&india;Sindhi">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">18</language_id>
+        <language_name rdf:datatype="&xsd;string">Sindhi</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Sonata_Software -->
+
+    <owl:NamedIndividual rdf:about="&india;Sonata_Software">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">54</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Sonata Software</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Tamil -->
+
+    <owl:NamedIndividual rdf:about="&india;Tamil">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">19</language_id>
+        <language_name rdf:datatype="&xsd;string">Tamil</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Tamil_Nadu -->
+
+    <owl:NamedIndividual rdf:about="&india;Tamil_Nadu">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">24</state_id>
+        <Pincode rdf:datatype="&xsd;string">60-64</Pincode>
+        <population rdf:datatype="&xsd;integer">76481545</population>
+        <Name rdf:datatype="&xsd;string">Tamil Nadu</Name>
+        <has rdf:resource="&india;Accel_Frontline"/>
+        <has rdf:resource="&india;Adrenalin_eSystems"/>
+        <has rdf:resource="&india;Cognizant"/>
+        <has rdf:resource="&india;Computer_Science_Corporation"/>
+        <has rdf:resource="&india;Datamatics_Global_Services"/>
+        <has rdf:resource="&india;HCL_Technologies"/>
+        <has rdf:resource="&india;Hexaware_Technologies"/>
+        <has rdf:resource="&india;Honeywell"/>
+        <has rdf:resource="&india;IGATE"/>
+        <has rdf:resource="&india;Infosys"/>
+        <has rdf:resource="&india;KPIT_Technologies"/>
+        <speak rdf:resource="&india;Kannada"/>
+        <has rdf:resource="&india;Larsen_&amp;_Toubro_Infotech"/>
+        <has rdf:resource="&india;Microsoft"/>
+        <has rdf:resource="&india;Mindtree"/>
+        <has rdf:resource="&india;Mphasis"/>
+        <has rdf:resource="&india;Oracle_Financial_Services_Software"/>
+        <has rdf:resource="&india;Polaris_Financial_Technology_Limited"/>
+        <has rdf:resource="&india;Prodapt_Solutions"/>
+        <has rdf:resource="&india;Ramco_Systems"/>
+        <has rdf:resource="&india;Sasken"/>
+        <speak rdf:resource="&india;Tamil"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <has rdf:resource="&india;Tech_Mahindra"/>
+        <speak rdf:resource="&india;Telegu"/>
+        <has rdf:resource="&india;ThinkPalm_Technologies"/>
+        <has rdf:resource="&india;Thoughtworks"/>
+        <has rdf:resource="&india;Trianz"/>
+        <speak rdf:resource="&india;Urdu"/>
+        <has rdf:resource="&india;Wipro"/>
+        <has rdf:resource="&india;ZOHO_Corporation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Tata_Consultancy_Services -->
+
+    <owl:NamedIndividual rdf:about="&india;Tata_Consultancy_Services">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">56</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Tata Consultancy Services</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Tata_Interactive_Systems -->
+
+    <owl:NamedIndividual rdf:about="&india;Tata_Interactive_Systems">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">57</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Tata Interactive Systems</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Tech_Mahindra -->
+
+    <owl:NamedIndividual rdf:about="&india;Tech_Mahindra">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">58</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Tech Mahindra</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Telangana -->
+
+    <owl:NamedIndividual rdf:about="&india;Telangana">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">25</state_id>
+        <population rdf:datatype="&xsd;integer">38472769</population>
+        <Pincode rdf:datatype="&xsd;string">504</Pincode>
+        <Name rdf:datatype="&xsd;string">Telangana</Name>
+        <has rdf:resource="&india;3i_Infotech"/>
+        <has rdf:resource="&india;Cognizant"/>
+        <has rdf:resource="&india;Collabera"/>
+        <has rdf:resource="&india;Cybage"/>
+        <has rdf:resource="&india;Cyient"/>
+        <has rdf:resource="&india;HCL_Technologies"/>
+        <has rdf:resource="&india;IGATE"/>
+        <has rdf:resource="&india;Infosys"/>
+        <has rdf:resource="&india;Larsen_&amp;_Toubro_Infotech"/>
+        <has rdf:resource="&india;Microsoft"/>
+        <has rdf:resource="&india;Mindtree"/>
+        <has rdf:resource="&india;Oracle_Financial_Services_Software"/>
+        <has rdf:resource="&india;Pesistant_Systems"/>
+        <has rdf:resource="&india;Polaris_Financial_Technology_Limited"/>
+        <has rdf:resource="&india;Pramati_Technologies"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <has rdf:resource="&india;Tech_Mahindra"/>
+        <speak rdf:resource="&india;Telegu"/>
+        <has rdf:resource="&india;Thoughtworks"/>
+        <has rdf:resource="&india;Trianz"/>
+        <speak rdf:resource="&india;Urdu"/>
+        <has rdf:resource="&india;Wipro"/>
+        <has rdf:resource="&india;Zensar_Technologies"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Telegu -->
+
+    <owl:NamedIndividual rdf:about="&india;Telegu">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">20</language_id>
+        <language_name rdf:datatype="&xsd;string">Telegu</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#ThinkPalm_Technologies -->
+
+    <owl:NamedIndividual rdf:about="&india;ThinkPalm_Technologies">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">59</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">ThinkPalm Technologies</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Thirdware -->
+
+    <owl:NamedIndividual rdf:about="&india;Thirdware">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">60</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Thirdware</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Thoughtworks -->
+
+    <owl:NamedIndividual rdf:about="&india;Thoughtworks">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">61</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Thoughtworks</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Trianz -->
+
+    <owl:NamedIndividual rdf:about="&india;Trianz">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">62</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Trianz</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Tripura -->
+
+    <owl:NamedIndividual rdf:about="&india;Tripura">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">26</state_id>
+        <population rdf:datatype="&xsd;integer">4057847</population>
+        <Pincode rdf:datatype="&xsd;string">799</Pincode>
+        <Name rdf:datatype="&xsd;string">Tripura</Name>
+        <speak rdf:resource="&india;Bengali"/>
+        <speak rdf:resource="&india;Hindi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#UST_Global -->
+
+    <owl:NamedIndividual rdf:about="&india;UST_Global">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">63</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">UST Global</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Urdu -->
+
+    <owl:NamedIndividual rdf:about="&india;Urdu">
+        <rdf:type rdf:resource="&india;Languages"/>
+        <language_id rdf:datatype="&xsd;int">21</language_id>
+        <language_name rdf:datatype="&xsd;string">Urdu</language_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Uttar_Pradesh -->
+
+    <owl:NamedIndividual rdf:about="&india;Uttar_Pradesh">
+        <rdf:type rdf:resource="&india;States"/>
+        <Pincode rdf:datatype="&xsd;string">20-28</Pincode>
+        <population rdf:datatype="&xsd;integer">228959599</population>
+        <state_id rdf:datatype="&xsd;int">27</state_id>
+        <Name rdf:datatype="&xsd;string">Uttar Pradesh</Name>
+        <has rdf:resource="&india;3i_Infotech"/>
+        <has rdf:resource="&india;HCL_Technologies"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <has rdf:resource="&india;IGATE"/>
+        <has rdf:resource="&india;KPIT_Technologies"/>
+        <has rdf:resource="&india;Monsoon_Multimedia"/>
+        <has rdf:resource="&india;NIIT_Technologies"/>
+        <has rdf:resource="&india;Nucleus_Software_Exports_Ltd."/>
+        <has rdf:resource="&india;Samsung_India_Software_Center"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <has rdf:resource="&india;Tech_Mahindra"/>
+        <speak rdf:resource="&india;Urdu"/>
+        <has rdf:resource="&india;Wipro"/>
+        <has rdf:resource="&india;Xansa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Uttarakhand -->
+
+    <owl:NamedIndividual rdf:about="&india;Uttarakhand">
+        <rdf:type rdf:resource="&india;States"/>
+        <population rdf:datatype="&xsd;integer">11090425</population>
+        <Pincode rdf:datatype="&xsd;string">20-28</Pincode>
+        <state_id rdf:datatype="&xsd;int">28</state_id>
+        <Name rdf:datatype="&xsd;string">Uttarakhand</Name>
+        <speak rdf:resource="&india;Hindi"/>
+        <speak rdf:resource="&india;Nepali"/>
+        <speak rdf:resource="&india;Punjabi"/>
+        <speak rdf:resource="&india;Urdu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#WNS_Global_Services -->
+
+    <owl:NamedIndividual rdf:about="&india;WNS_Global_Services">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">65</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">WNS Global Services</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#West_Bengal -->
+
+    <owl:NamedIndividual rdf:about="&india;West_Bengal">
+        <rdf:type rdf:resource="&india;States"/>
+        <state_id rdf:datatype="&xsd;int">29</state_id>
+        <Pincode rdf:datatype="&xsd;string">70-74</Pincode>
+        <population rdf:datatype="&xsd;integer">97694960</population>
+        <Name rdf:datatype="&xsd;string">West Bengal</Name>
+        <has rdf:resource="&india;Accel_Frontline"/>
+        <speak rdf:resource="&india;Bengali"/>
+        <has rdf:resource="&india;Cognizant"/>
+        <has rdf:resource="&india;Collabera"/>
+        <has rdf:resource="&india;Firstsource"/>
+        <has rdf:resource="&india;HCL_Technologies"/>
+        <speak rdf:resource="&india;Hindi"/>
+        <has rdf:resource="&india;Microsoft"/>
+        <has rdf:resource="&india;NIIT_Technologies"/>
+        <speak rdf:resource="&india;Nepali"/>
+        <speak rdf:resource="&india;Santali"/>
+        <has rdf:resource="&india;Tata_Consultancy_Services"/>
+        <has rdf:resource="&india;Tech_Mahindra"/>
+        <speak rdf:resource="&india;Urdu"/>
+        <has rdf:resource="&india;Wipro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Wipro -->
+
+    <owl:NamedIndividual rdf:about="&india;Wipro">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">64</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Wipro</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Xansa -->
+
+    <owl:NamedIndividual rdf:about="&india;Xansa">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">66</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Xansa</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Xerox -->
+
+    <owl:NamedIndividual rdf:about="&india;Xerox">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">67</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Xerox</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#ZOHO_Corporation -->
+
+    <owl:NamedIndividual rdf:about="&india;ZOHO_Corporation">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">69</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">ZOHO Corporation</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/puchu/ontologies/2019/5/india#Zensar_Technologies -->
+
+    <owl:NamedIndividual rdf:about="&india;Zensar_Technologies">
+        <rdf:type rdf:resource="&india;IT_Companies"/>
+        <IT_Companies_id rdf:datatype="&xsd;int">68</IT_Companies_id>
+        <IT_Companies_Name rdf:datatype="&xsd;string">Zensar Technologies</IT_Companies_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&india;IT_Companies"/>
+            <rdf:Description rdf:about="&india;Languages"/>
+            <rdf:Description rdf:about="&india;States"/>
+            <rdf:Description rdf:about="&india;Union_Territories"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
